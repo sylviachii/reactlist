@@ -11,11 +11,26 @@ import Detil from './profile/Detil';
 import Add from './profile/Add';
 import Conunt from './Count';
 import Edit from './profile/Edit';
+import Axios from "axios";
+import { useState } from 'react';
+
+
 //import { AccordionButton } from 'react-bootstrap';
 
+
+const getEmployee = () => {
+  Axios.get("151.106.97.232/chiweiorder").then((response) => {
+    console.log(response);
+  });
+};
+
+
+
 function App() {
+  const [employeeList , setEmployeeList] = useState([]);
   return (
     <div className="App">
+<button onClick={getEmployee}>Show Employees</button>
       <div className="content">
         <Header />
         <main>
