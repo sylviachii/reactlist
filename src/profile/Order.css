@@ -1,0 +1,175 @@
+.list,
+.Shipping {
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  flex-direction: column;
+  padding: 20px 0;
+  align-items: center;
+}
+
+
+
+.spacebetween {
+  align-self: center;
+  display: flex;
+  width: 100%;
+  max-width: 336px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.spacebetweens {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.line {
+  background-color: #d9d9d9;
+  margin-top: 13px;
+  height: 1px;
+}
+
+.div-6 {
+  align-self: center;
+  display: flex;
+  margin-top: 14px;
+  width: 100%;
+  max-width: 335px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.span-3 {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  align-items: flex-start;
+
+}
+
+.listtitle {
+  letter-spacing: 3px;
+  white-space: nowrap;
+  font: 400 12px Noto Sans, sans-serif;
+}
+
+
+.span-4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.listright {
+  justify-content: flex-end;
+  color: #000;
+  text-align: right;
+  letter-spacing: 3px;
+  margin-left: 16px;
+  white-space: nowrap;
+  font: 500 14px Noto Sans, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #35b4ba;
+  display: flex;
+  letter-spacing: 1.4px;
+  justify-content: flex-start;
+}
+
+h4 {
+  display: contents;
+  letter-spacing: 2px;
+  justify-content: flex-start;
+}
+
+.create {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px;
+  width: 100%;
+  max-width: 336px;
+}
+
+.listname {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  line-height: 36px;
+}
+
+.listinput {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  justify-content: space-around;
+  text-align: left;
+
+}
+
+.Shipping {
+  display: flex;
+  flex-direction: column;
+}
+
+.address,
+.note,
+.prodectname {
+  text-align: left;
+  line-height: 24px;
+  margin-bottom: 30px;
+  font: 700 16px Noto Sans, sans-serif;
+}
+
+.Scndmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.content2nd {
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.nav{
+  font: 700 16px Noto Sans, sans-serif;
+}
+
+.ordercount {
+  align-self: center;
+  display: flex;
+  width: 100%;
+  max-width: 336px;
+  justify-content: space-between;
+  gap: 20px;
+  
+}
+
+.ordercountlist {
+  font: 900 16px Noto Sans, sans-serif;
+  margin-bottom: 20px;
+}
+
+.line{
+  background-color: #d9d9d9;
+  margin-top: 13px;
+  height: 1px;
+}
