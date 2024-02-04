@@ -4,7 +4,7 @@ const ProductItem = (props) => {
   return (
     <div className="spacebetween">
       <div>
-        <img src="./src/profile/img.png" alt="Product" />
+        <img src="http://makakona.com/wp-content/uploads/2023/12/12-5_0003_405252263_338185985605452_178825488757428720_n-150x150.jpg" alt="Product" />
       </div>
       <div className="prodectname">
         {props.productName}

@@ -19,7 +19,7 @@ import { useState } from 'react';
 
 
 const getEmployee = () => {
-  Axios.get("151.106.97.232/chiweiorder").then((response) => {
+  Axios.get("http://localhost:3001/create").then((response) => {
     console.log(response);
   });
 };
@@ -28,6 +28,7 @@ const getEmployee = () => {
 
 function App() {
   const [employeeList , setEmployeeList] = useState([]);
+  console.log(employeeList);
   return (
     <div className="App">
 <button onClick={getEmployee}>Show Employees</button>

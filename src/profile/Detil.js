@@ -7,7 +7,9 @@ import List from './ProdoctList';
 // Usage of the BlueDatePicker component in a parent component or file
 function Detil() {
     return (
+        
         <div className='test'>
+           
             <h1>Detil</h1>
             <div className="list">
                 <div className="spacebetween">

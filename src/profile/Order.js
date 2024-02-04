@@ -1,16 +1,21 @@
-import React from 'react';
-import './Order.css';
+import React, { useState, useEffect } from 'react';
 import List from './ProdoctList';
-
+import OrderList from './OrderList';
 const Order = () => {
-  return (
-    <div className='test'>
-      <h1>Order</h1>
-      <div className="content2nd">
-        <List />
+    // Using the ProductItem component
+    return (
+        <>
+                <div>
+            <h1>MySQL Data in React</h1>
+        </div>
+
+      <div>
+        <OrderList/>
+
       </div>
-    </div>
-  );
-};
+      </>
+    );
+  };
+
 
 export default Order;
