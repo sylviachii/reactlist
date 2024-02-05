@@ -3,29 +3,22 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './profile/Home';
 import About from './profile/About';
 import Order from './profile/Order';
-import Detil from './profile/Detil';
-import DetilList from './orderlist/DetilList';
 import Add from './profile/Add';
 import Conunt from './Count';
 import Edit from './profile/Edit';
 import Axios from "axios";
 import { useState } from 'react';
-import Lists from './orderlist/DetilId';
-import ListsContainer from './ListsContainer';
+import Detil from './Detil';
 
 //import { AccordionButton } from 'react-bootstrap';
 
 
-
-
-
-
 function App() {
-  const [employeeList , setEmployeeList] = useState([]);
+  const [employeeList, setEmployeeList] = useState([]);
   console.log(employeeList);
   return (
     <div className="App">
@@ -33,17 +26,15 @@ function App() {
       <div className="content">
         <Header />
         <main>
-          
           <Router>
             <div>
               <nav>
                 <ul>
-                  
                   <li>
                     <Link to="/home">訂單</Link>
                   </li>
                   <li>
-                    <Link to="/detil">統計</Link>
+                    <Link to="/">統計</Link>
                   </li>
                   <li>
                     <Link to="/order">採購</Link>
@@ -60,9 +51,8 @@ function App() {
                 <Route path="/order" element={<Order />}></Route>
                 <Route path="/about" element={<About />}></Route>
                 <Route path="/conunt" element={<Conunt />}></Route>
-                <Route path="/detil" element={<Detil />}></Route>
                 <Route path="/edit" element={<Edit />}></Route>
-                <Route exact path="/listscontainer/:id" element={<ListsContainer />} />
+                <Route exact path="/detil/:id" element={<Detil />} />
               </Routes>
             </div>
           </Router>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Edit from './Edit';
 import Shipping from './Shipping';
-import List from './ProdoctList';
+
 
 const AddForm = () => {
   // 用于存储输入字段值的状态

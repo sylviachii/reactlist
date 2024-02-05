@@ -23,9 +23,18 @@ const DetilSend = ({ id }) => {
     fetchData();
   }, [id]);
 
+  const shouldRenderList =
+    data &&
+    data.length > 0 &&
+    Array.from({ length: 9 }, (_, index) => index + 1).some((i) => {
+      const imgSrcKey = `imgsrc${i}`;
+      const nameKey = `name${i}`;
+      return data[0][imgSrcKey] && data[0][nameKey];
+    });
+
   return (
     <div>
-      {data && data.length > 0 ? (
+      {shouldRenderList ? (
         <div className="list">
           {Array.from({ length: 9 }, (_, index) => index + 1).map((i) => {
             const imgSrcKey = `imgsrc${i}`;
@@ -53,9 +62,7 @@ const DetilSend = ({ id }) => {
             ) : null;
           })}
         </div>
-      ) : (
-        <p>Loading...</p>
-      )}
+      ) : null}
     </div>
   );
 };

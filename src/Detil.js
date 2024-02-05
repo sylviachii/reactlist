@@ -4,13 +4,14 @@ import Lists from './orderlist/DetilId';
 import Orderlist from './orderlist/Detilorder';
 import Addresslist from './orderlist/Addresslist';
 import DetilSend from './orderlist/DetilSend';
-import YourParentComponent from './orderlist/test';
-const ListsContainer = () => {
+
+const Detil = () => {
   // Extract the 'id' parameter from the URL
   const { id } = useParams();
 
   return (
     <div className='orderlist'>
+      <h1>Detil</h1>
       <Lists id={id} />
       <Orderlist id={id} />
       <DetilSend id={id} />
@@ -19,4 +20,4 @@ const ListsContainer = () => {
   )
 };
 
-export default ListsContainer;
+export default Detil;
