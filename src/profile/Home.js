@@ -1,5 +1,7 @@
 import React from 'react';
 import Scndmenu from './Scndmenu';
+import Mainlists from './Main';
+import Items from './Items';
 
 // Define a component named DatePicker within the object
 const Mainlist = {
@@ -51,12 +53,13 @@ function MainDatePicker({ Orderid, date, otherInfo, productTotal, customerName, 
 // Usage of the DatePicker component in a parent component or file
 function Home() {
   return (
-    <div className='test'>
+    <div className='orderlist'>
       <h1>Home Page</h1>
       <Scndmenu />
-      <MainDatePicker  Orderid="123" productTotal="5" customerName="張張張" delivery="全家超商"/>
-      <MainDatePicker  Orderid="124" productTotal="15" customerName="張張張" delivery="全家超商"/>
-      <MainDatePicker  Orderid="231" productTotal="95" customerName="哩哩哩" delivery="小七超商"/>
+      <Items />
+      <MainDatePicker  Orderid="123" productTotal="5" customerName="手輸入測試" delivery="全家超商"/>
+      <Mainlists />
+      
     </div>
   );
 }

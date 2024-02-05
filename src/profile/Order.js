@@ -1,21 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import List from './ProdoctList';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import OrderList from './OrderList';
-const Order = () => {
-    // Using the ProductItem component
-    return (
-        <>
-                <div>
-            <h1>MySQL Data in React</h1>
-        </div>
+import Lists from '../orderlist/DetilId';
+import { createRoot } from 'react-dom/client';
+
+const Order  = () => {
+  const idValue = 1; // 替换为你实际的 id 值
+  const title = 'Your Title';
+
+  return (
+    <>
+      <div>
+        <h1>MySQL Data in React</h1>
+      </div>
 
       <div>
-        <OrderList/>
-
+        <h1>React API 数据获取示例</h1>
+        <Lists id={idValue} />
+        <Lists id={2} title={title}/>
+        <Lists />
+      <h2>1: </h2>
+        <OrderList />
       </div>
-      </>
-    );
-  };
+    </>
+  );
+};
 
+createRoot(document.getElementById('root')).render(<Order />);
 
 export default Order;
