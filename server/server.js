@@ -16,6 +16,7 @@ const connection = mysql.createConnection({
     password: '1234567Qaz*',
     database: 'u542437981_test',
     connectionLimit: 300, // 設置連接池大小
+    connectTimeout: 30000, // Set the connection timeout in milliseconds (e.g., 30 seconds)
 });
 
 const connection2 = mysql.createConnection({
@@ -24,6 +25,7 @@ const connection2 = mysql.createConnection({
     password: '1234567Qaz*',
     database: 'u542437981_test',
     connectionLimit: 300, // 設置連接池大小
+    connectTimeout: 30000, // Set the connection timeout in milliseconds (e.g., 30 seconds)
 });
 
 const connection3 = mysql.createConnection({
@@ -32,6 +34,7 @@ const connection3 = mysql.createConnection({
     password: '1234567Qaz*',
     database: 'u542437981_test',
     connectionLimit: 10, // 設置連接池大小
+    connectTimeout: 30000, // Set the connection timeout in milliseconds (e.g., 30 seconds)
 });
 
 connection.connect(function (err) {
@@ -70,7 +73,7 @@ app.get('/', (req, res) => {
     });
 
     app.get('/api/data3', (req, res) => {
-        connection3.query('SELECT * FROM `chiweiorder` ORDER BY `orderlist`.`id` DESC', (error, results) => {
+        connection3.query('SELECT * FROM `chiweiorder` ORDER BY `chiweiorder`.`id` DESC', (error, results) => {
             if (error) {
                 res.status(500).json({ error });
             } else {

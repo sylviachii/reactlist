@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 const Mainlists = (props) => {
 
         const [data, setData] = useState([]);
@@ -17,7 +17,7 @@ const Mainlists = (props) => {
 
         <div className="list">
           <div className="spacebetween">
-          <h4>訂單: #{items.idorder}</h4>
+          <h4><Link to={`/listscontainer/${items.id}`}>訂單: #{items.id}</Link></h4>
             <div className="spacebetweens">
               <div className="div-2">商品: ({props.productTotal})</div>
             </div>
